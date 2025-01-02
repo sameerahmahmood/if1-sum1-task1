@@ -1,7 +1,7 @@
 import random 
 """ Random equation generator that generates simple equations using random numbers"""
 
-print("Welcome to the Random Equation generator!")
+print("Welcome to the Equation Genie!")
 
 def main():
     while True:
