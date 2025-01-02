@@ -1,2 +1,6 @@
-# if1-sum1-task1
-Summative Assignment 1 Task 1
+# Random Equation Generator
+## User Documentation
+### Introduction 
+Hello and welcome to the user 
+### Purpose
+## Technical Documentation
