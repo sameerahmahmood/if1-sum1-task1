@@ -11,6 +11,13 @@ The purpose of this program is to generate simple random mathematical equations 
 
 ### Getting Started
 #### Requirements
-- A personal computer or laptop running Windows, MacOS, Linux
--  
+- A computer or laptop running any of these operating systems; Windows, macOS or Linux
+- Python version 3.6 or higher installed
+
+#### Features
+1. User choice for number of equations
+One of the features of this program is that it will prompt the user how many equations they would like to solve and than ask them that many times.
+2. Timed Answer
+Another feature of Equation Quiz is 
+4. User Streak
 ## Technical Documentation
