@@ -20,4 +20,23 @@ One of the features of this program is that it will prompt the user how many equ
 2. Timed Answer
 Another feature of Equation Quiz is 
 4. User Streak
+
+#### How to Run Program
+1. Make sure you have a late version of Python installed on your computer that you wish to run the program 
+
+#### How to Use Program 
+[text](![ezgif com-split](https://github.com/user-attachments/assets/1a8f8671-426f-4220-8616-c1fec545f466)
+)
 ## Technical Documentation
+### Overview
+This part of the guide demonstrates the technical side of the program, Equation Quize including the Design, Coding Standards as well as being able to clone a reponsitory from collaboration platform such as GitHub. 
+
+### Cloning a Repository
+Prior to running the program, it is important to know how to create a copy of the repository that stores the program file on one's computer which allows the for using, editing and updating changes back the repository in real time as well as version control. 
+
+1. Get the Repository URL
+   
+The repository page of this specific program is located on the popular software developer collab platform called GitHub. Simply locate the repository of choice and copy the URL from the search bar.
+2. Terminal
+Then search for a terminal for example Command Prompt or Windows Powershell and Bash if you are working with Linux. 
+4. Directory Navigation 
