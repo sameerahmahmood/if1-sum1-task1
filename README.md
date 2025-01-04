@@ -25,7 +25,7 @@ Another feature of Equation Quiz is
 1. Make sure you have a late version of Python installed on your computer that you wish to run the program 
 
 #### How to Use Program 
-[text](![ezgif com-split](https://github.com/user-attachments/assets/1a8f8671-426f-4220-8616-c1fec545f466)
+[](![ezgif com-split](https://github.com/user-attachments/assets/1a8f8671-426f-4220-8616-c1fec545f466)
 )
 ## Technical Documentation
 ### Overview
@@ -37,6 +37,8 @@ Prior to running the program, it is important to know how to create a copy of th
 1. Get the Repository URL
    
 The repository page of this specific program is located on the popular software developer collab platform called GitHub. Simply locate the repository of choice and copy the URL from the search bar.
+
 2. Terminal
-Then search for a terminal for example Command Prompt or Windows Powershell and Bash if you are working with Linux. 
+Then search for a terminal for example Command Prompt or Windows Powershell and Bash if you are working with Linux.
+
 4. Directory Navigation 
