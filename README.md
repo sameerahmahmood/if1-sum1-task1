@@ -39,6 +39,21 @@ Prior to running the program, it is important to know how to create a copy of th
 The repository page of this specific program is located on the popular software developer collab platform called GitHub. Simply locate the repository of choice and copy the URL from the search bar.
 
 2. Terminal
+
 Then search for a terminal for example Command Prompt or Windows Powershell and Bash if you are working with Linux.
 
-4. Directory Navigation 
+4. Directory Navigation
+
+Use the 'cd' command navigate to a folder where you would like to clone the repository i.e. where you store the copied repository as shown below. 
+
+```cd <desired_folder>
+
+5. Using the git clone Command
+
+```git clone <repository_url>
+
+6. Cloned Repository Navigation
+
+In order to change the current directory into the cloned repository directory, 
+6. 
+7. 
