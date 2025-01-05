@@ -46,14 +46,14 @@ Then search for a terminal for example Command Prompt or Windows Powershell and 
 
 Use the 'cd' command navigate to a folder where you would like to clone the repository i.e. where you store the copied repository as shown below. 
 
-```cd <desired_folder>
+```cd <desired_folder>```
 
 5. Using the git clone Command
 
-```git clone <repository_url>
+```git clone <repository_url>```
 
 6. Cloned Repository Navigation
 
-In order to change the current directory into the cloned repository directory, 
-6. 
-7. 
+In order to change the current directory into the cloned repository directory, simply use the 'cd' command again but with cloned repository name instead like this:
+
+```cd name_of_repository```
