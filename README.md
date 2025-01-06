@@ -57,3 +57,12 @@ Use the 'cd' command navigate to a folder where you would like to clone the repo
 In order to change the current directory into the cloned repository directory, simply use the 'cd' command again but with cloned repository name instead like this:
 
 ```cd name_of_repository```
+
+
+### Program Flow
+
+### Error Handling
+
+### Testing and Validation 
+
+### Considerations
