@@ -9,6 +9,11 @@ The purpose of this program is to generate simple random mathematical equations 
 - Multiplication
 - Division
 
+The format of the equation will be any of the following:
+3 + ? = 12
+? - 3 = 12
+3 * 4 = ?
+
 ### Getting Started
 #### Requirements
 - A computer or laptop running any of these operating systems; Windows, macOS or Linux
@@ -25,7 +30,7 @@ Another feature of Equation Quiz is
 1. Make sure you have a late version of Python installed locally
 2. Download the python file from the repository accessed via this link: https://github.com/sameerahmahmood/if1-sum1-task1/blob/main/random_equation_generator.py
 
-[alt text](<img width="935" alt="image" src="https://github.com/user-attachments/assets/025ea131-92ad-4edd-ae1a-b7beb0a58644" />)
+[Example Screenshot](<img width="935" alt="ifp pic 1" src="https://github.com/user-attachments/assets/3bb72379-6912-4199-8031-e525cb8f2f2b" />)
 
 4. Store the file within a folder of your choice
 5. 
