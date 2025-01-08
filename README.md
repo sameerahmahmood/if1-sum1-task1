@@ -30,11 +30,11 @@ Another feature of Equation Quiz is
 1. Make sure you have a late version of Python installed locally
 2. Download the python file from the repository accessed via this link: https://github.com/sameerahmahmood/if1-sum1-task1/blob/main/random_equation_generator.py
 
-[Example Screenshot](img width="935" alt="ifp pic 1" src="https://github.com/user-attachments/assets/3bb72379-6912-4199-8031-e525cb8f2f2b" /)
+[Example Screenshot](https://github.com/user-attachments/assets/3bb72379-6912-4199-8031-e525cb8f2f2b)
 
 3. Store the file within a folder of your choice
    
-[Example Screenshot] (img width="542" alt="ifp pic 2" src="https://github.com/user-attachments/assets/d9662d25-a867-41e7-ae79-0a4dbe5d1618" /)
+[Example Screenshot](https://github.com/user-attachments/assets/d9662d25-a867-41e7-ae79-0a4dbe5d1618)
  
 8. Using the search bar in the taskbar, navigate to the terminal or Command Prompt
 9. Use the 'cd' command to direct into the folder where you saved the file
