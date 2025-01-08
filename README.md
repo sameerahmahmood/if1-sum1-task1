@@ -22,7 +22,16 @@ Another feature of Equation Quiz is
 4. User Streak
 
 #### How to Run Program
-1. Make sure you have a late version of Python installed on your computer that you wish to run the program 
+1. Make sure you have a late version of Python installed locally
+2. Download the python file from the repository accessed via this link: https://github.com/sameerahmahmood/if1-sum1-task1/blob/main/random_equation_generator.py
+
+[alt text](<img width="935" alt="image" src="https://github.com/user-attachments/assets/025ea131-92ad-4edd-ae1a-b7beb0a58644" />)
+
+4. Store the file within a folder of your choice
+5. 
+6. Using the search bar in the taskbar, navigate to the terminal or Command Prompt
+7. Use the 'cd' command to direct into the folder where you saved the file
+8. 
 
 #### How to Use Program 
 [](![ezgif com-split](https://github.com/user-attachments/assets/1a8f8671-426f-4220-8616-c1fec545f466)
