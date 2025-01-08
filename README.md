@@ -30,15 +30,22 @@ Another feature of Equation Quiz is
 1. Make sure you have a late version of Python installed locally
 2. Download the python file from the repository accessed via this link: https://github.com/sameerahmahmood/if1-sum1-task1/blob/main/random_equation_generator.py
 
+An example screenshot is shown below.
 ![Example Screenshot](https://github.com/user-attachments/assets/3bb72379-6912-4199-8031-e525cb8f2f2b)
 
 3. Store the file within a folder of your choice
-   
-![Example Screenshot](https://github.com/user-attachments/assets/d9662d25-a867-41e7-ae79-0a4dbe5d1618)
+
+An example screenshot is shown below.
+![Example Screenshot](https://github.com/user-attachments/assets/177e1822-90ca-4124-a3a6-52490be3dba9
+)
  
 8. Using the search bar in the taskbar, navigate to the terminal or Command Prompt
 9. Use the 'cd' command to direct into the folder where you saved the file
-10. 
+
+An example screenshot is shown below.
+![Example Screenshot](https://github.com/user-attachments/assets/90833d04-efc4-4aee-85a0-1ddfc4e9fa50)
+10. Run the program using the command python <name_of_file.py>. In this case, it would be ```python random_equation_generator.py``` but the name will of course vary depending on what file you are trying to run. 
+
 
 #### How to Use Program 
 [](![ezgif com-split](https://github.com/user-attachments/assets/1a8f8671-426f-4220-8616-c1fec545f466)
