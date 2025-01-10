@@ -9,22 +9,24 @@ The purpose of this program is to generate simple random mathematical equations 
 - Multiplication
 - Division
 
-The format of the equation will be any of the following:
+The format of the equation can be any of the following:
 - 3 + ? = 12
 - ? - 3 = 12
 - 3 * 4 = ?
+
+### Main Features
+1. User choice for number of equations
+One of the features of this program is that it will prompt the user how many equations they would like to solve and than ask them that many times.
+2. Timed Answer
+Equation Quiz is able to time the user's session measuring how long it takes for them to complete the quiz. The timer will start when the actual quiz part of the program starts (excluding any prior activities) and will stop as soon as the user completes the quiz. 
+4. User Streak
+The user streak is another unique feature designed to display the current streak of the user i.e. how many questions in the quiz they have got correct. 
 
 ### Getting Started
 #### Requirements
 - A computer or laptop running any of these operating systems; Windows, macOS or Linux
 - Python version 3.6 or higher installed
 
-#### Features
-1. User choice for number of equations
-One of the features of this program is that it will prompt the user how many equations they would like to solve and than ask them that many times.
-2. Timed Answer
-Another feature of Equation Quiz is 
-4. User Streak
 
 #### How to Run Program
 1. Make sure you have a late version of Python installed locally
