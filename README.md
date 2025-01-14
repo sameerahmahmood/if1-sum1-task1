@@ -1,6 +1,7 @@
-# Equation Quizz
+# Equation Quiz
 ## Overview 
 Welcome to the **Equation Quiz** manual where it is designed to help the user understand how to use the program, Equation Quiz and does not require any programming experience. 
+
 ## User Manual
 The purpose of this quiz-like program is to generate simple random mathematical equations for the user to solve and essentially test one's knowledge. These equations can come in any of the following formats whereby the symbol "?" or question mark is what the user is trying to solve as shown below;
 
@@ -14,10 +15,11 @@ In the equation will consist of two randomly generated factors i.e. the operands
 1. User choice for number of equations
 One of the features of this program is that it will prompt the user how many equations they would like to solve and than ask them that many times.
 2. Timed Answer
-Equation Quiz is able to time the user's session measuring how long it takes for them to complete the quiz. The timer will start when the actual quiz part of the program starts (excluding any prior activities) and will stop as soon as the user completes the quiz. 
-3. User Streak
+Equation Quiz is able to time the user's session measuring how long it takes for them to complete the quiz. The timer will start when the actual quiz part of the program starts (excluding any prior activities) and will stop as soon as the user completes the quiz. This feature overall adds that element of challenge and encourages users to play again whilst improving mental math skills.
+4. User Streak
 The user streak is another unique feature designed to display the current streak of the user i.e. how many questions in the quiz they have got correct. 
-4. Score tracker
+5. Score tracker
+At the end of the quiz, the user is able to see how many equations they solved correctly out of how many they wanted to solve. 
 
 #### Requirements
 - A computer or laptop running any of these operating systems; Windows, macOS or Linux
@@ -61,7 +63,7 @@ An example screenshot is shown below.
 This part of the guide demonstrates the technical side of the program, Equation Quize including the Design, Coding Standards as well as being able to clone a reponsitory from collaboration platform such as GitHub. 
 
 ### Cloning a Repository
-Prior to running the program, it is important to know how to create a copy of the repository that stores the program file on one's computer which allows the for using, editing and updating changes back the repository in real time as well as version control. 
+Prior to running the program, it is important to know how to create a copy of the repository that stores the program file on one's computer which allows for using, editing and updating changes back the repository in real time and version control. 
 
 1. Get the Repository URL
    
@@ -87,11 +89,28 @@ In order to change the current directory into the cloned repository directory, s
 
 ```cd name_of_repository```
 
+From there, one is able to access and run the python file which includes the program itself. 
 
-### Program Flow
+### Coding Standards
+The next aprt of this document outlnies coding standards which are a set of practices and guidelines one follows to ensure the highest quality code and consistency. Below are some examples of general coding standards:
+#### Naming Conventions
+For this section, naming conventions will be dicussed specifically for things like variables and functions. For variables, snake_case is the main naming convention I used for example the variable that stores how many equations to solve "total_eqs". The word "total" is self-explanotory. Then I attached an underscore after it and a shortened word for equation called "eqs" which leads onto the next point.
 
-### Error Handling
+I tried to implement descriptive names and verb phrases for my variables and function names. Some variable examples include:
+- user_score
+- user_answer
+- missing_var
+- operator
+In terms of functions were:
+- generate_components
+- construct_equation
+- format_equation
+- check_user_score
+#### Program Flow
 
+#### Error Handling
+
+#### New and Existing Features 
 ### Testing and Validation 
 
 ### Considerations
