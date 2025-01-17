@@ -181,7 +181,7 @@ New features:
 - Number of equation limit: I had to do this underneath 'total_eqs' by setting a number to be the limit to how many equations the user to solve by assigning a variable called "maximum_eqs" to the value 100. 
 - User streak: I made this by incorporating it into the check_user_score function with a simple incrementing line of code using '+= 1' which happens to be the same way I created the user score. 
 - Timed user session: I updated this by simply importing time into the main file and then initialising it just outside of the for loop where it will call each of the functions for every equation. I then ended the timer after and outside the for loop and printing time taken.
-- 
+ 
 #### Error Handling and Testing 
 For testing I implemented unit tests for the tech_user_score function and wrote example test cases and their outcomes. The unit tests were written using the test framework, pytest. 
 
