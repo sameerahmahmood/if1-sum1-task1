@@ -75,7 +75,7 @@ Then search for a terminal for example Command Prompt or Windows Powershell and 
 
 4. Directory Navigation
 
-Use the 'cd' command navigate to a folder where you would like to clone the repository i.e. where you store the copied repository as shown below. 
+Use the 'cd' command navigate to a folder where you would like to clone the repository, as shown below. 
 
 ```cd <desired_folder>```
 
@@ -92,25 +92,57 @@ In order to change the current directory into the cloned repository directory, s
 From there, one is able to access and run the python file which includes the program itself. 
 
 ### Coding Standards
-The next aprt of this document outlnies coding standards which are a set of practices and guidelines one follows to ensure the highest quality code and consistency. Below are some examples of general coding standards:
+The next part of this document outlnies coding standards which are a set of practices and guidelines one follows to ensure the highest quality code and consistency. Below are some examples of general coding standards:
 #### Naming Conventions
-For this section, naming conventions will be dicussed specifically for things like variables and functions. For variables, snake_case is the main naming convention I used for example the variable that stores how many equations to solve "total_eqs". The word "total" is self-explanotory. Then I attached an underscore after it and a shortened word for equation called "eqs" which leads onto the next point.
-
-I tried to implement descriptive names and verb phrases for my variables and function names. Some variable examples include:
+For this section, naming conventions will be dicussed specifically for things like variables and functions. For variables, snake_case is the main naming convention I used for example the variable that stores how many equations to solve "total_eqs". The word "total" is self-explanatory. Then I attached an underscore after it and a shortened word for equation called "eqs" to improve readability. This convention also applied to function names. I tried to implement descriptive names and verb phrases for my variables and function names. Some examples include:
 - user_score
 - user_answer
 - missing_var
 - operator
-In terms of functions were:
+Function name examples:
 - generate_components
 - construct_equation
 - format_equation
 - check_user_score
 #### Program Flow
 
-#### Error Handling
+Next I will discuss the structure of the program i.e. how each step is executed. The program flow is sectioned into phases:
+1. Program startup
+The program will firstly greet the user with a welcome message. In the main function, it will  prompt the user to input how many equations they would like to solve. Whilst doing so, it will validate their response ensuring that the input is positive, not over the equation limit and/or any other invalid inputs. If the input happens to invalid, the user is simply re-prompted. Other things like their score and streak as well as timer will be initialised.
+Main function inputs:
+- total_eqs 
+- user_answer
+Main function outputs:
+- current streak of the user
+- user's final score
+- user's time taken during the quiz
+- 
+2. Generating the equation randomly 
+The next stage includes a function called 'generate_function' randomly generating each of the components (operand1,operand2 and operator) from the random import statement. If division is to be selected, I decided that the second number to be generated i.e. operand2 be a factor of the first number (operand1) resulting in whole numbers for the sake of simplicity.
+
+3. Constructing the equation
+After generating the components, the next step is the creation of the equation, ensuring that it is valid using the 'construct_function'. At this point the program will use those randomly generated numbers from the prior function to construct a simple equation. It will also calculate the result of the equation i.e. the produced output. After this, instead of having lots of code in what function, I returned calling the function 'format_equation' whilst still inside the 'construct_equation' function in order to improve modularity.
+Inputs:
+- operand1
+5. Formatting the equation
+Subsequently, the equation needs to be formatted which done with the use of the 'format_equation' function as mentioned above. This stage is necessary as it handles how the equation is going to look like for the user. It does this by randomly hiding one part of the equation and assigning it as a 'missing_var' variable. This variable contains the value the user is going to attempt to solve.
+
+6. Check the user score and streak
 
 #### New and Existing Features 
-### Testing and Validation 
+Existing features 
 
-### Considerations
+New features 
+1. 
+#### Testing and Validation 
+
+#### Considerations
+
+1. Simple and easy to use
+2. Modularity
+3. Readability 
+
+#### Future Enhancements
+- User choice in the operation type for example: Addition, Multiplication, Division, Subtraction or all
+- Highest streak tracker: In the future its possible to check your highest streak out of all of the users session 
+- GUI: A Graphical User Interface for easier navigation and potential mobile application development
