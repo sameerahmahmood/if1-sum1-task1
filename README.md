@@ -92,13 +92,20 @@ In order to change the current directory into the cloned repository directory, s
 From there, one is able to access and run the python file which includes the program itself. 
 
 ### Coding Standards
-The next part of this document outlnies coding standards which are a set of practices and guidelines one follows to ensure the highest quality code and consistency. Below are some examples of general coding standards:
+The next part of this document outlnies coding standards which are a set of practices and guidelines one follows to ensure the highest quality code and consistency.
+
 #### Naming Conventions
-For this section, naming conventions will be dicussed specifically for things like variables and functions. For variables, snake_case is the main naming convention I used for example the variable that stores how many equations to solve "total_eqs". The word "total" is self-explanatory. Then I attached an underscore after it and a shortened word for equation called "eqs" to improve readability. This convention also applied to function names. I tried to implement descriptive names and verb phrases for my variables and function names. Some examples include:
+For this section, naming conventions will be dicussed specifically for things like variables and functions. For variables, snake_case is the main naming convention I used for example the variable that stores how many equations to solve "total_eqs". The word "total" is self-explanatory. Then I attached an underscore after it and a shortened word for equation called "eqs" to improve readability. This convention also applied to function names. I tried to implement descriptive names and verb phrases for my variables and function names. Examples include:
+
 - user_score
 - user_answer
 - missing_var
 - operator
+- operand1
+- operand2
+- result
+- missing_var
+- true_answer
 Function name examples:
 - generate_components
 - construct_equation
@@ -108,39 +115,81 @@ Function name examples:
 
 Next I will discuss the structure of the program i.e. how each step is executed. The program flow is sectioned into phases:
 1. Program startup
-The program will firstly greet the user with a welcome message. In the main function, it will  prompt the user to input how many equations they would like to solve. Whilst doing so, it will validate their response ensuring that the input is positive, not over the equation limit and/or any other invalid inputs. If the input happens to invalid, the user is simply re-prompted. Other things like their score and streak as well as timer will be initialised.
-Main function inputs:
+   
+The program will  greet the user with a welcome message. In the main function, it will  prompt the user to input how many equations they would like to solve. Whilst doing so, it will validate their response ensuring that the input is positive, not over the equation limit and/or any other invalid inputs. Otherwise the user is simply re-prompted. After that is a for loop that will go through the total number of equations and inside it will have a user request to solve the missing number, followed by each of the functions being called. Other things like their score and streak as well as timer will be initialised.
+
+Inputs:
 - total_eqs 
 - user_answer
-Main function outputs:
-- current streak of the user
-- user's final score
-- user's time taken during the quiz
-- 
-2. Generating the equation randomly 
+  
+Outputs:
+- user_score
+- user_streak
+- start_time
+  
+2. Generating the equation
+  
 The next stage includes a function called 'generate_function' randomly generating each of the components (operand1,operand2 and operator) from the random import statement. If division is to be selected, I decided that the second number to be generated i.e. operand2 be a factor of the first number (operand1) resulting in whole numbers for the sake of simplicity.
 
 3. Constructing the equation
-After generating the components, the next step is the creation of the equation, ensuring that it is valid using the 'construct_function'. At this point the program will use those randomly generated numbers from the prior function to construct a simple equation. It will also calculate the result of the equation i.e. the produced output. After this, instead of having lots of code in what function, I returned calling the function 'format_equation' whilst still inside the 'construct_equation' function in order to improve modularity.
+   
+After generating the components, the next step is the creation of the equation using the 'construct_function'. At this point the program will use those randomly generated numbers from the prior function to construct a simple equation. It will also calculate the result of the equation i.e. the output. After this, instead of having lots of code in what function, I returned calling the function 'format_equation' whilst still inside the 'construct_equation' function in order to improve modularity.
+
 Inputs:
 - operand1
+- operand2
+  
+Outputs:
+- formatted equation with one missing part(missing_var)
+  
 5. Formatting the equation
-Subsequently, the equation needs to be formatted which done with the use of the 'format_equation' function as mentioned above. This stage is necessary as it handles how the equation is going to look like for the user. It does this by randomly hiding one part of the equation and assigning it as a 'missing_var' variable. This variable contains the value the user is going to attempt to solve.
+  
+Subsequently, the equation needs to be formatted which done with the use of the 'format_equation' function as mentioned above. This stage is necessary as it handles how the equation is going to look like for the user. It does this by randomly choosing one part of the equation - operand1, operand2 or result and assigning to the 'missing_var' variable which will be what the user will ultimately solve. It also will calcaluate the correct answer to the equation e.g. if missing_var == operand1, then the 'true_answer' variable will be equal to the operand1 variable.
 
+Inputs:
+- operand1
+- operand2
+- operator
+- result
+- equation
+  
+Outputs:
+- equation
+- true answer
 6. Check the user score and streak
 
-#### New and Existing Features 
-Existing features 
+Inputs:
+- user_answer
+- true_answer
+- user_score
+- user_streak
 
-New features 
-1. 
-#### Testing and Validation 
+Outputs:
+- user_score
+- user_streak
+  
+#### New and Existing Features 
+Existing features are:
+
+- Ask user how many equations to solve
+- Score validation
+- Score tracking
+- Basic error handling
+
+New features:
+
+- Number of equation limit: I had to do this underneath 'total_eqs' by setting a number to be the limit to how many equations the user to solve by assigning a variable called "maximum_eqs" to the value 100. 
+- User streak: I made this by incorporating it into the check_user_score function with a simple incrementing line of code using '+= 1' which happens to be the same way I created the user score. 
+- Timed user session: I updated this by simply importing time into the main file and then initialising it just outside of the for loop where it will call each of the functions for every equation. I then ended the timer after and outside the for loop and printing time taken.
+- 
+#### Error Handling and Testing 
+For testing I implemented unit tests for the tech_user_score function and wrote example test cases and their outcomes. The unit tests were written using the test framework, pytest. 
 
 #### Considerations
-
+The structure and overall design of the program were done in a way that were:
 1. Simple and easy to use
-2. Modularity
-3. Readability 
+2. Modular
+3. Readable 
 
 #### Future Enhancements
 - User choice in the operation type for example: Addition, Multiplication, Division, Subtraction or all
