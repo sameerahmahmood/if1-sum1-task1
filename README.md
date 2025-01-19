@@ -62,7 +62,7 @@ This unique feature is designed to display the current streak of the user.
 4. See outcome
 
 ###### Example Gameplay
-![example gif of the running program](![ezgif com-split](https://github.com/user-attachments/assets/1a8f8671-426f-4220-8616-c1fec545f466))
+(![example gif of running program](https://github.com/user-attachments/assets/1a8f8671-426f-4220-8616-c1fec545f466))
 
 ## Technical Documentation
 ### Overview
