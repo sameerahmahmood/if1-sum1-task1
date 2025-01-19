@@ -3,7 +3,7 @@
 Welcome to the **Equation Quiz** manual where it is designed to help the user understand how to use the program, Equation Quiz and does not require any programming experience. 
 
 ## User Manual
-The purpose of this quiz-like program is to generate simple random mathematical equations for the user to solve and essentially test one's knowledge. These equations can come in any of the following formats whereby the symbol "?" is what the user is trying to solve as shown below;
+The purpose of this quiz-like program is to generate simple random mathematical equations and essentially test one's knowledge. These equations can come in any of the following formats whereby the symbol "?" is what the user is trying to solve as shown below;
 
 - 3 + ? = 12
 - ? - 3 = 12
@@ -11,11 +11,15 @@ The purpose of this quiz-like program is to generate simple random mathematical 
   
 The equation will consist of two randomly generated factors i.e. the operands (two numbers) and the operator. Operators can be either; Addition, Subtraction, Multiplication or Division. 
 
+Example of Division:
+
+"12 / 3 = ?"
+
 ### Main Features
 1. User choice for number of equations
 It will prompt the user how many equations they would like to solve and than ask them that many times except if its over the limit
 2. Score Checker and Tracker
-Users' answer's are validated to see if they're correct or not as well as tracked which the user can their total score at the very end of the quiz. 
+Users' answer's are validated as well as tracked which the user can their total score at the very end of the quiz. 
 3. Timed Answer
 The program can measure how long it takes for the user to complete the quiz, adding that element of challenge whilst improving mental math skills.
 4. User Streak
@@ -53,9 +57,9 @@ This unique feature is designed to display the current streak of the user.
 #### How to Use Program 
 1. Run the game in the terminal using the following command
 ```python equation_quiz_generator.py```
-2. Input how many equations you would like to solve e.g. the number "10"
+2. Input how many equations you would like to solve e.g. "10"
 3. Answer each equation as requested 
-4. See output 
+4. See outcome
 
 ###### Example Gameplay
 [example gif of the running program](![ezgif com-split](https://github.com/user-attachments/assets/1a8f8671-426f-4220-8616-c1fec545f466))
@@ -65,15 +69,15 @@ This unique feature is designed to display the current streak of the user.
 This part of the guide defines the technicalities of the program, Equation Quiz including the design, coding standards and being able to clone a repository from GitHub. 
 
 ### Cloning a Repository
-Prior to running the program, it is important to know how to create a copy of the repository that stores the program file on one's computer.
+It is important to know how to create a copy of the repository that stores the program file locally.
 
 1. Get the Repository URL
    
-The repository page of this specific program is located on GitHub. Simply locate the repository and copy the URL from the search bar.
+Locate the repository on GitHub and copy the URL from the search bar.
 
 2. Terminal
 
-Then search for a terminal for example Command Prompt.
+Then go into a terminal or Command Prompt.
 
 4. Directory Navigation
 
@@ -88,7 +92,7 @@ Use the following command to clone the repository.
 
 6. Cloned Repository Navigation
 
-In order to change the current directory into the cloned repository one, simply use the 'cd' command again but with cloned repository name instead like this:
+To change into the cloned repository one, simply use the 'cd' command again but with cloned repository name instead like this:
 
 ```cd name_of_repository```
 
@@ -96,7 +100,7 @@ In order to change the current directory into the cloned repository one, simply 
 The next part of this document outlines coding standards which are a set of guidelines one follows to ensure the highest quality code and consistency.
 
 #### Naming Conventions
-For both variable and function names, snake_case following PEP8 standards was the main naming convention I used for example the variable that stores how many equations to solve "total_eqs". Furthermore,  I tried to make the names descriptive and include verb phrases. Examples include:
+For both variable and function names, snake_case was the main naming convention I used e.g. the variable that stores the total number of equations "total_eqs". Furthermore,  I tried to make the names descriptive and include verb phrases. Examples include:
 
 - user_score
 - user_answer
@@ -119,7 +123,7 @@ Next I will discuss the structure of the program i.e. how each step is executed 
 
 1. Program start-up
    
-In the main function, it will prompt the user to input how many equations they would like to solve. Whilst doing so, it will validate their response ensuring that there inputs are correct. Otherwise the user is simply re-prompted. After that is a for loop that will loop through the total number of equations, requesting the user to solve the missing number each time. Each of the functions are also called and then it would output the outcome accordingly.
+In the main function, it will prompt the user to input how many equations they would like to solve. Whilst doing so, it will validate their response ensuring that there inputs are correct. Otherwise the user is simply re-prompted. After that is a for loop that will loop through the total number of equations, requesting the user to solve the missing number each time. Each of the functions are also called and then produce the output.
 
 Inputs:
 - total_eqs 
@@ -147,7 +151,7 @@ Outputs:
   
 5. Formatting the equation
   
-Subsequently, the equation would be formatted by the 'format_equation' function as mentioned above. It handles how the equation is going to look like for the user. It does this by randomly choosing one part of the equation - operand1, operand2 or result and assigning to the 'missing_var' variable which will be what the user will ultimately solve. It also will calculates the correct answer to the equation. 
+Subsequently, the equation would be formatted by the 'format_equation' function as mentioned above. It handles how the equation is going to look like for the user, by randomly choosing a particular part of the equation and assigning to the 'missing_var' variable. This will ultimately be what the user is solving. It also will calculates the correct answer to the equation. 
 
 Inputs:
 - operand1
@@ -186,15 +190,18 @@ New features:
 - Timed user session: I updated this by simply importing time into the file and then initialising it just as the quiz starts.
  
 #### Testing 
-For testing I implemented pytest unit tests for the tech_user_score function in a seperate file called test_equation_quiz_generator.py. 
+
+I implemented pytest unit tests for the tech_user_score function in a seperate file called test_equation_quiz_generator.py. 
 
 #### Considerations
 The structure and overall design of the program were done in a way that were:
 1. Simple and easy to use
-2. Modular
-3. Readable 
+2. Modular i.e. breaking down program into modules
+3. Readable code
 
 #### Future Enhancements
+Lastly are some possible developments for the near future. 
 - User choice in specific operation type or all 
-- Highest streak tracker/ leaderboard: To be able to check your highest streak out of all of the users session 
-- GUI: A Graphical User Interface for easier navigation and potential application development
+- Highest streak tracker/ leaderboard: ability to check your highest streak out of all of the users session 
+- GUI: for easier navigation and potential application development
+
