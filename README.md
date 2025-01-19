@@ -62,7 +62,7 @@ This unique feature is designed to display the current streak of the user.
 4. See outcome
 
 ###### Example Gameplay
-[example gif of the running program](![ezgif com-split](https://github.com/user-attachments/assets/1a8f8671-426f-4220-8616-c1fec545f466))
+![example gif of the running program](![ezgif com-split](https://github.com/user-attachments/assets/1a8f8671-426f-4220-8616-c1fec545f466))
 
 ## Technical Documentation
 ### Overview
@@ -136,7 +136,7 @@ Outputs:
   
 2. Generating the equation
   
-The next stage includes the 'generate_function' function which randomly generating each of the components (operand1,operand2 and operator) from importing random. If division is to be selected, operand2 is to be a factor of the operand1 resulting in whole numbers for the sake of simplicity.
+The next stage includes the 'generate_function' function which randomly generating each of the components (operand1,operand2 and operator) using the 'random' import. If division is to be selected, operand2 is to be a factor of the operand1 resulting in whole numbers for the sake of simplicity.
 
 3. Constructing the equation
    
@@ -151,7 +151,7 @@ Outputs:
   
 5. Formatting the equation
   
-Subsequently, the equation would be formatted by the 'format_equation' function as mentioned above. It handles how the equation is going to look like for the user, by randomly choosing a particular part of the equation and assigning to the 'missing_var' variable. This will ultimately be what the user is solving. It also will calculates the correct answer to the equation. 
+Subsequently, the equation would be formatted by the 'format_equation' function as mentioned above. It handles how the equation is going to look like for the user, by randomly choosing a particular part of the equation(operand1, operand2 or result) and assigning to the 'missing_var' variable. This will ultimately be what the user is solving. It also will calculates the correct answer to the equation. 
 
 Inputs:
 - operand1
@@ -163,7 +163,10 @@ Inputs:
 Outputs:
 - equation
 - true answer
+
 6. Check the user score and streak
+
+This section includes the check_user_score function which calculates the user score and their streak.
 
 Inputs:
 - user_answer
@@ -186,8 +189,8 @@ Existing features:
 New features:
 
 - Number of equation limit: I had to do this underneath 'total_eqs' by setting a limit to the number of equations by assigning a variable called "maximum_eqs". 
-- User streak: I made this by incorporating it into the check_user_score function by using an addition operation operator below user_score.
-- Timed user session: I updated this by simply importing time into the file and then initialising it just as the quiz starts.
+- User streak: I incooperated check_user_score function by using an addition operation operator below user_score.
+- Timed user session: I updated this by simply importing 'time' into the file.
  
 #### Testing 
 
@@ -204,4 +207,3 @@ Lastly are some possible developments for the near future.
 - User choice in specific operation type or all 
 - Highest streak tracker/ leaderboard: ability to check your highest streak out of all of the users session 
 - GUI: for easier navigation and potential application development
-
