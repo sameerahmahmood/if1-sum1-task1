@@ -1,11 +1,16 @@
+#importing random for randomising operations including the operands, operator and equation order
 import random 
+#importing time for timing the user session
 import time
 
-""" Random equation generator that generates simple equations using random numbers for users"""
-
-print("Welcome to the Equation Quiz!")
+print("Welcome to Equation Quiz!!")
 
 def main():
+    """ Random equation generator that generates simple equations using random numbers for users to solve as quickly as possible. 
+        It is in a quiz format and has functionalities for generating, constructing and formatting equations. 
+        It also keeps track of the users score and streak. 
+    """
+
     while True:
         try:
             total_eqs = int(input("How many equations would you to like to solve?: "))
@@ -25,7 +30,6 @@ def main():
     user_score = 0
     #initialise streak counter
     user_streak = 0 
-    #start timer
     start_time = time.time()
     #loop through the total number of equations
     for _ in range(total_eqs):
@@ -46,13 +50,10 @@ def main():
         print(f"Current Streak: {user_streak}")
     
 
-    #end timer
     end_time = time.time()
     #calculates the time taken by the user and rounds it
-    user_time = round(end_time - start_time)
-    # gives users their final score    
-    print(f"Your final score is: {user_score} out of {total_eqs}")
-    #prints time taken 
+    user_time = round(end_time - start_time)   
+    print(f"Your final score is: {user_score} out of {total_eqs}") 
     print(f"Time taken: {user_time} seconds!")
 
 def generate_components():
