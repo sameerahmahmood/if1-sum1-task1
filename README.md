@@ -97,7 +97,7 @@ To change into the cloned repository one, simply use the 'cd' command again but 
 ```cd name_of_repository```
 
 ### Coding Standards
-The next part of this document outlines coding standards which are a set of guidelines one follows to ensure the highest quality code and consistency.
+The next part of this document outlines coding standards which are a set of guidelines ensuring the highest quality code and consistency.
 
 #### Naming Conventions
 For both variable and function names, snake_case was the main naming convention I used e.g. the variable that stores the total number of equations "total_eqs". Furthermore,  I tried to make the names descriptive and include verb phrases. Examples include:
@@ -119,7 +119,7 @@ Function name examples:
 
 #### Program Flow
 
-Next I will discuss the structure of the program i.e. how each step is executed which will be sectioned into stages.
+Next I will discuss the structure of the program i.e. how each step is executed which will be sectioned into stages. Throughout this program, I made sure to add appropriate code comments where applicable. 
 
 1. Program start-up
    
