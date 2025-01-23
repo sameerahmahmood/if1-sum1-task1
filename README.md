@@ -1,6 +1,6 @@
 # Equation Quiz
 ## Overview
-Welcome to the **Equation Quiz** manual where it is designed to help the user understand how to use the program, Equation Quiz and does not require any programming experience. 
+Welcome to the **Equation Quiz** manual, designed to help the user understand how to use the program Equation Quiz which also does not require any programming experience. 
 
 ## User Manual
 The purpose of this quiz-like program is to generate simple random mathematical equations and essentially test one's knowledge. These equations can come in any of the following formats whereby the symbol "?" is what the user is trying to solve as shown below;
@@ -17,9 +17,9 @@ Example of Division:
 
 ### Main Features
 1. User choice for number of equations
-It will prompt the user how many equations they would like to solve and than ask them that many times except if its over the limit
+It will prompt the user as to how many equations they would like to solve and then ask them that many times not exceeding the set limit.
 2. Score Checker and Tracker
-Users' answer's are validated as well as tracked which the user can their total score at the very end of the quiz. 
+The answers are validated, tracked and visible to the user and a total score is given at the very end of the quiz. 
 3. Timed Answer
 The program can measure how long it takes for the user to complete the quiz, adding that element of challenge whilst improving mental math skills.
 4. User Streak
@@ -123,7 +123,7 @@ Next I will discuss the structure of the program i.e. how each step is executed 
 
 1. Program start-up
    
-In the main function, it will prompt the user to input how many equations they would like to solve. Whilst doing so, it will validate their response ensuring that there inputs are correct. Otherwise the user is simply re-prompted. After that is a for loop that will loop through the total number of equations, requesting the user to solve the missing number each time. Each of the functions are also called and then produce the output.
+In the main function, it will prompt the user to input how many equations they would like to solve. Whilst doing so, it will validate their response ensuring that their inputs are correct. Otherwise the user is simply re-prompted. After that is a loop that will loop through the total number of equations, requesting the user to solve the missing number each time. Each of the functions are also called and then produce the output.
 
 Inputs:
 - total_eqs 
@@ -136,7 +136,7 @@ Outputs:
   
 2. Generating the equation
   
-The next stage includes the 'generate_function' function which randomly generating each of the components (operand1,operand2 and operator) using the 'random' import. If division is to be selected, operand2 is to be a factor of the operand1 resulting in whole numbers for the sake of simplicity.
+The next stage includes the 'generate_function' function which randomly generates each of the components (operand1, operand2 and operator) using the 'random' import. If division is to be selected, operand2 is to be a factor of the operand1 resulting in whole numbers for the sake of simplicity.
 
 3. Constructing the equation
    
@@ -151,7 +151,7 @@ Outputs:
   
 5. Formatting the equation
   
-Subsequently, the equation would be formatted by the 'format_equation' function as mentioned above. It handles how the equation is going to look like for the user, by randomly choosing a particular part of the equation(operand1, operand2 or result) and assigning to the 'missing_var' variable. This will ultimately be what the user is solving. It also will calculates the correct answer to the equation. 
+Subsequently, the equation would be formatted by the 'format_equation' function as mentioned above. It handles how the equation is going to look like for the user, by randomly choosing a particular part of the equation (operand1, operand2 or result) and assigning to the 'missing_var' variable. This will ultimately be what the user is solving. It will also calculate the correct answer to the equation. 
 
 Inputs:
 - operand1
@@ -188,7 +188,7 @@ Existing features:
 
 New features:
 
-- Number of equation limit: I had to do this underneath 'total_eqs' by setting a limit to the number of equations by assigning a variable called "maximum_eqs". 
+- Number of equations limit: I had to do this underneath 'total_eqs' by setting a limit to the number of equations by assigning a variable called "maximum_eqs". 
 - User streak: I incooperated check_user_score function by using an addition operation operator below user_score.
 - Timed user session: I updated this by simply importing 'time' into the file.
  
@@ -199,7 +199,7 @@ I implemented pytest unit tests for the tech_user_score function in a seperate f
 #### Considerations
 The structure and overall design of the program were done in a way that were:
 1. Simple and easy to use
-2. Modular i.e. breaking down program into modules
+2. Modular i.e. breaking down the program into modules
 3. Readable code
 
 #### Future Enhancements
